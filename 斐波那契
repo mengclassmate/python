@@ -1,0 +1,15 @@
+import requests
+
+r = requests.get("http://www.cas.cn/")
+
+print(r.text)
+
+print(r.content)
+
+import requests
+
+r = requests.get("http://www.cas.cn/")
+
+with open('favicon.ico','wb') as f:
+
+     f.write(r.content)
